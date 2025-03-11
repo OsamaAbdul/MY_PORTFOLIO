@@ -53,7 +53,7 @@ function Contents() {
             <div className="card-body">
               <p>Hi, My Name is</p>
               <h1>Osama <span>Abdullahi</span> Ibrahim</h1>
-              <h5 className="auto-writer" ref={writerRef}></h5>
+              <h5 className="auto-writer" ref={writerRef}>.</h5>
             </div>
             <Socials />
           </div>
