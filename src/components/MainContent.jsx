@@ -98,11 +98,10 @@ function Contents() {
       <Education 
         education={[
           {
-            type: "TERIARY INSTITUTION",
+            type: "TERTIARY INSTITUTION",
             institution: "Nasarawa State University, Keffi",
             course: "Computer Science",
             year: "2018 - 2023",
-            cgpa: "4.2 out of 5.0",
             description: "Bachelor Of Science In Computer Science."
           },
           {
@@ -110,7 +109,7 @@ function Contents() {
             institution: "Olokpa Comprehensive High School, Doma, Nasarawa State",
             course: "Qualification: SSCE",
             year: "2011 - 2017",
-            description: ""
+            description: "West African Examination Council Certificate"
           }
         ]}
       />
