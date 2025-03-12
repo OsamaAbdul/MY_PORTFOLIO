@@ -19,7 +19,7 @@ const projectData = [
     name: 'My Personal Portfolio',
     description: 'Built a personal portfolio while learning the power of React components.',
     technologies: ['React', 'Bootstrap', 'Ajax', 'Material UI'],
-    link: 'https://github.com/OsamaAbdul/personal-portfolio',
+    link: 'https://github.com/OsamaAbdul/MY_PORTFOLIO',
     image: '/images/portfolio.jpg', // Updated to public path
   },
   {
