@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import Avatar from '../images/osama.jpg'; 
 import Socials from './Socials';
 import Education from './Education';
 import Projects from './Projects'; 
@@ -61,7 +60,7 @@ function Contents() {
         <div className="col-sm-6 mb-2">
           <div className="card">
             <div className="card-body">
-              <img className="avatar" src={Avatar} alt="Osama Pic" />
+            <img className="avatar" src="/images/osama.jpg" alt="Osama Pic" />
             </div>
           </div>
         </div>

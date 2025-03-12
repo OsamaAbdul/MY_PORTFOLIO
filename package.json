@@ -1,5 +1,5 @@
 {
-  "homepage": "https://OsamaAbdul.github.io/MY_PORTOFOLIO",
+ 
   "name": "my-react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -22,10 +22,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-   "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-
-  
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test:build": "npm run build && serve -s build",
+    "clean": "rm -rf build node_modules && npm cache clean --force",
+    "reinstall": "npm run clean && npm install",
+    "preview": "npm run build && npx http-server build -p 8080"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +48,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "http-server": "^14.1.1",
+    "serve": "^14.2.4"
   }
 }
