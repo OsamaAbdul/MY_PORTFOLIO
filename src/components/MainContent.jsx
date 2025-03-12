@@ -99,7 +99,7 @@ function Contents() {
         education={[
           {
             type: "TERIARY INSTITUTION",
-            institution: "Gombe State University",
+            institution: "Nasarawa State University, Keffi",
             course: "Computer Science",
             year: "2018 - 2023",
             cgpa: "4.2 out of 5.0",
