@@ -21,6 +21,7 @@ const projectData = [
     technologies: ['React', 'Bootstrap', 'Ajax', 'Material UI'],
     link: 'https://github.com/OsamaAbdul/MY_PORTFOLIO',
     image: '/images/portfolio.jpg', // Updated to public path
+    live: 'https://osamaabdul-portfolio.netlify.app'
   },
   {
     name: 'Book List Manager App',
@@ -28,6 +29,14 @@ const projectData = [
     technologies: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Node.js', 'MongoDB', 'ExpressJS'],
     link: 'https://github.com/OsamaAbdul/booklist',
     image: '/images/booklist.jpg', // Updated to public path
+  },
+  {
+    name: "React Jobs Api",
+    description: 'React Jobs API, a sleek and modern job listing application built with React and Vite! 🌟 Explore a curated collection of job opportunities, dive into detailed job descriptions, and manage listings with ease. Whether you are a job seeker or an employer, this app delivers a seamless and responsive experience powered by a static JSON API.',
+    technologies: ['React', 'Vite', 'CSS', 'HTML', 'Tailwindcss'],
+    link: 'https://github.com/OsamaAbdul/React-Jobs-Api',
+    image: '/images/react-jobs-api.png',
+    live: 'https://react-jobs-api.vercel.app/',
   },
 ];
 
