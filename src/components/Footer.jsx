@@ -1,8 +1,4 @@
-
-
 function Footer() {
-
-
     //getting full date
     const date = new Date();
 

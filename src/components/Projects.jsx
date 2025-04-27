@@ -2,10 +2,7 @@ import React from 'react';
 import { Grid, Typography, Container } from '@mui/material';
 import ProjectCard from './ProjectCard';
 
-// Remove these imports since images are now in public/
-// import BookList from '../images/booklist.jpg';
-// import Attendance from '../images/cds.jpg';
-// import Portfolio from '../images/portfolio.jpg';
+
 
 const projectData = [
   {
@@ -37,6 +34,21 @@ const projectData = [
     link: 'https://github.com/OsamaAbdul/React-Jobs-Api',
     image: '/images/react-jobs-api.png',
     live: 'https://react-jobs-api.vercel.app/',
+  },
+  {
+    name: "AI Powered Recipe Recommendation App",
+    description: "AI-powered Recipe Wizard — your intelligent kitchen assistant that suggests mouth-watering recipes based on your cravings, available ingredients, or dietary preferences. Built with ⚛️ React and 💨 Tailwind CSS, this modern web app blends clean UI with the smart magic of artificial intelligence.",
+    technologies: ["React", "GEMINI API", "TailwindCss"],
+    link: "https://github.com/OsamaAbdul/AI-RECIPE-RECOMMENDATOR",
+    image: "/images/recipe.png",
+    live: 'https://ai-recipe-recommendation.vercel.app/'
+  },
+  {
+    name: "Farmer Sales App",
+    description: "Connect Farmers to Buyers and Top Agro-Companies to get verified seeds, herbicides, fertilizers, grants and machineries for easy farming experience. Also Used Grok AI APi to fetch all agric trends on popular social network app like X formerly Known as Twitter for the farmers.",
+    technologies: ["React", "Grok API", "TailwindCss", 'NodeJs', "ExpressJS", "JWT", "e.t.c"],
+    link: "https://github.com/OsamaAbdul/Farmer_Sales_App",
+    image: "/images/farmer.png"
   },
 ];
 
