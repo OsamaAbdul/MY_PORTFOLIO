@@ -7,17 +7,17 @@ import ProjectCard from './ProjectCard';
 const projectData = [
   {
     name: 'Token Based Attendance System',
-    description: 'Built a full-stack web attendance application which uses tokens to sign attendance. Features include authentication, complaints, token generation, and CRUD operations.',
+    description: 'Built a full-stack web attendance application which uses tokens to sign attendance. Features include authentication, dashboards, token generation, marking attendance and CRUD operations.',
     technologies: ['JavaScript', 'React', 'Node.js', 'MongoDB', 'Express.js'],
-    link: 'https://github.com/OsamaAbdul/Do-DeeL-Attendance',
-    image: '/images/cds.jpg', // Updated to public path
+    link: 'https://token-based-classroom-attendance.netlify.app/student/login',
+    image: '/images/tokenbased.jpg', 
   },
   {
     name: 'My Personal Portfolio',
     description: 'Built a personal portfolio while learning the power of React components.',
     technologies: ['React', 'Bootstrap', 'Ajax', 'Material UI'],
     link: 'https://github.com/OsamaAbdul/MY_PORTFOLIO',
-    image: '/images/portfolio.jpg', // Updated to public path
+    image: '/images/portfolio.jpg', 
     live: 'https://osamaabdul-portfolio.netlify.app'
   },
   {
@@ -25,7 +25,7 @@ const projectData = [
     description: 'Built a web app that keeps records of book authors and their books.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Node.js', 'MongoDB', 'ExpressJS'],
     link: 'https://github.com/OsamaAbdul/booklist',
-    image: '/images/booklist.jpg', // Updated to public path
+    image: '/images/booklist.jpg', 
   },
   {
     name: "React Jobs Api",
@@ -50,7 +50,18 @@ const projectData = [
     link: "https://github.com/OsamaAbdul/Farmer_Sales_App",
     image: "/images/farmer.png"
   },
+  {
+    name: "OsAI QuizMaster",
+    description: "An innovative web app that transforms learning into an interactive and personalized experience — powered by state-of-the-art AI APIs. Upload your PDFs, auto-generate quizzes, evaluate answers in real-time, and get smarter feedback instantly.Whether you're a student, teacher, or lifelong learner — this tool is your smart study partner.",
+    technologies: ["React", "Gemini API", "TailwindCss", 'NodeJs', "ExpressJS", "JWT", "e.t.c"],
+    link: "https://github.com/Osamaabdul/AQ_QUIZ_GENERATOR_AND_EVALUATOR",
+    image: "/images/OsaAI.png",
+    live: "https://ai-quiz-generator-and-evaluator-t26o.vercel.app/"
+  }
 ];
+
+
+
 
 const Projects = () => {
   return (
