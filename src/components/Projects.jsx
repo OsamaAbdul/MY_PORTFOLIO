@@ -9,7 +9,7 @@ const projectData = [
     name: 'Token Based Attendance System',
     description: 'Built a full-stack web attendance application which uses tokens to sign attendance. Features include authentication, dashboards, token generation, marking attendance and CRUD operations.',
     technologies: ['JavaScript', 'React', 'Node.js', 'MongoDB', 'Express.js'],
-    link: 'https://github.com/OsamaAbdul/token-based-classroom-attendance',
+    link: 'https://github.com/OsamaAbdul/token-based-attendance-system',
     image: '/images/tokenbased.jpg', 
     live: 'https://token-based-classroom-attendance.netlify.app'
   },
