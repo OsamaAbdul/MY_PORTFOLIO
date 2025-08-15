@@ -54,7 +54,7 @@ const projectData = [
     name: "EduSparkz",
     description: "An innovative web app that transforms learning into an interactive and personalized experience — powered by state-of-the-art AI APIs. Upload your PDFs, .docx and images auto-generate quizzes, evaluate answers in real-time, and get smarter feedback instantly.Whether you're a student, teacher, or lifelong learner — this tool is your smart study partner.",
     technologies: ["React", "Gemini API", "TailwindCss", 'NodeJs', "ExpressJS", "JWT", "e.t.c"],
-    link: "https://github.com/Osamaabdul/edusparkz",
+    link: "https://github.com/Osamaabdul/EduSparkz",
     image: "/images/eduspark.png",
     live: "https://edusparkz.vercel.app/"
   }
