@@ -51,12 +51,12 @@ const projectData = [
     image: "/images/farmer.png"
   },
   {
-    name: "OsAI QuizMaster",
-    description: "An innovative web app that transforms learning into an interactive and personalized experience — powered by state-of-the-art AI APIs. Upload your PDFs, auto-generate quizzes, evaluate answers in real-time, and get smarter feedback instantly.Whether you're a student, teacher, or lifelong learner — this tool is your smart study partner.",
+    name: "EduSparkz",
+    description: "An innovative web app that transforms learning into an interactive and personalized experience — powered by state-of-the-art AI APIs. Upload your PDFs, .docx and images auto-generate quizzes, evaluate answers in real-time, and get smarter feedback instantly.Whether you're a student, teacher, or lifelong learner — this tool is your smart study partner.",
     technologies: ["React", "Gemini API", "TailwindCss", 'NodeJs', "ExpressJS", "JWT", "e.t.c"],
     link: "https://github.com/Osamaabdul/AQ_QUIZ_GENERATOR_AND_EVALUATOR",
-    image: "/images/OsaAI.png",
-    live: "https://ai-quiz-generator-and-evaluator-t26o.vercel.app/"
+    image: "/images/eduspark.png",
+    live: "https://edusparkz.vercel.app"
   }
 ];
 
