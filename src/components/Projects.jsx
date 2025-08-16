@@ -5,6 +5,14 @@ import ProjectCard from './ProjectCard';
 
 
 const projectData = [
+   {
+    name: "EduSparkz",
+    description: "An innovative web app that transforms learning into an interactive and personalized experience — powered by state-of-the-art AI APIs. Upload your PDFs, .docx and images auto-generate quizzes, evaluate answers in real-time, and get smarter feedback instantly.Whether you're a student, teacher, or lifelong learner — this tool is your smart study partner.",
+    technologies: ["React", "Gemini API", "TailwindCss", 'NodeJs', "ExpressJS", "JWT", "e.t.c"],
+    link: "https://github.com/Osamaabdul/EduSparkz",
+    image: "/images/eduspark.png",
+    live: "https://edusparkz.vercel.app/"
+  },
   {
     name: 'Token Based Attendance System',
     description: 'Built a full-stack web attendance application which uses tokens to sign attendance. Features include authentication, dashboards, token generation, marking attendance and CRUD operations.',
@@ -51,14 +59,7 @@ const projectData = [
     link: "https://github.com/OsamaAbdul/Farmer_Sales_App",
     image: "/images/farmer.png"
   },
-  {
-    name: "EduSparkz",
-    description: "An innovative web app that transforms learning into an interactive and personalized experience — powered by state-of-the-art AI APIs. Upload your PDFs, .docx and images auto-generate quizzes, evaluate answers in real-time, and get smarter feedback instantly.Whether you're a student, teacher, or lifelong learner — this tool is your smart study partner.",
-    technologies: ["React", "Gemini API", "TailwindCss", 'NodeJs', "ExpressJS", "JWT", "e.t.c"],
-    link: "https://github.com/Osamaabdul/EduSparkz",
-    image: "/images/eduspark.png",
-    live: "https://edusparkz.vercel.app/"
-  }
+ 
 ];
 
 
