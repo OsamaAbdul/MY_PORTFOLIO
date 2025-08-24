@@ -10,10 +10,10 @@ function Contents() {
 
   useEffect(() => {
     const texts = [
-      "I am a MERN STACK Developer!",
-      "I love gaming",
+      "I am a Mern Stack Developer!",
+      "I love gaming.....",
       "I specialized in Crypto Airdrops too...",
-      "Hire me....Let's build something great!"
+      "Hire me....Let's build something great leveraging AI!"
     ];
     let index = 0;
     let charIndex = 0;
@@ -73,14 +73,14 @@ function Contents() {
                 <h1>About<span> Me</span></h1>
               </center>
               <p>
-                I am a <span>MERN STACK developer</span> with a passion for web development, Blockchain and AI. 
+                I am a <span>Mern Stack developer</span> with a passion for web development, Blockchain and AI. 
                 I have a background and a Bachelor Degree (B.sc) in computer science,
-                and I have a strong interest in building Web Apps and interacting with blockchain technology.
-                I am currently serving as a Corp Member of the National Youth Service Corps (NYSC) at Gombe State University in Gombe State, Nigeria.
+                and I have a strong interest in building Web Apps leveraging Artificial Intelligence and interacting with blockchain technology.
+                Have built and deployed 5+ web Apps...
               </p>
               <br />
               <br />
-              <h3><span>Technologies</span> I have been working with recently</h3>
+              <h3><span>Technologies</span> I have worked with: </h3>
               <ol className="stack">
                 <li>Node.js</li>
                 <li>Express.js</li>
