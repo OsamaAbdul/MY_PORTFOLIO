@@ -11,7 +11,7 @@ const projectData = [
     technologies: ["React", "Gemini API", "TailwindCss", 'NodeJs', "ExpressJS", "JWT", "e.t.c"],
     link: "https://github.com/Osamaabdul/EduSparkz",
     image: "/images/eduspark.png",
-    live: "https://edusparkz.vercel.app/"
+    live: "https://edu-sparkz.vercel.app/"
   },
   {
     name: 'Token Based Attendance System',
