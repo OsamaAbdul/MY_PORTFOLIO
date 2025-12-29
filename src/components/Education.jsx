@@ -1,42 +1,39 @@
-export default function Education(props) {
-  const { education } = props;
+import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
+import { Badge } from "./ui/badge";
 
+export default function Education({ education }) {
   return (
-    <div className="container py-5">
-      <div className="d-flex justify-content-center align-items-center min-vh-50">
-        <div className="col-sm-8">
-          <center>
-            <h1>Edu<span>cation</span></h1>
-          </center>
-          <div className="about p-3">
-            <div className="card-body">
-              <div className="row">
-                {education.map((edu, index) => (
-                  <div key={index} className="col-md-12">
-                    <div className="card bg-black text-white mb-1"> {/* Changed from mb-3 to mb-1 */}
-                      <div className="card-body">
-                        <div className="row">
-                          <div className="col-md-6">
-                            <h2>{edu.type}</h2>
-                            <ul>
-                              <li>{edu.institution}</li>
-                              <li>{edu.course}</li>
-                            </ul>
-                            <p>{edu.cgpa}</p>
-                          </div>
-                          <div className="col-md-6 text-right">
-                            <p>{edu.year}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+    <section className="container py-24">
+      <div className="flex flex-col items-center mb-12">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 uppercase">
+          Edu<span className="text-[#ff0033]">cation</span>
+        </h2>
+        <div className="h-1 w-20 bg-[#ff0033] rounded-full" />
       </div>
-    </div>
+
+      <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+        {education.map((edu, index) => (
+          <Card key={index} className="bg-card/50 backdrop-blur border-muted transition-colors hover:border-primary/50">
+            <CardHeader className="space-y-1">
+              <div className="flex justify-between items-start gap-4">
+                <Badge variant="outline" className="text-xs font-normal">
+                  {edu.type}
+                </Badge>
+                <span className="text-sm text-muted-foreground whitespace-nowrap">
+                  {edu.year}
+                </span>
+              </div>
+              <CardTitle className="text-xl mt-2">{edu.institution}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <h3 className="font-semibold text-primary mb-2 text-lg">{edu.course}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {edu.description}
+              </p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </section>
   );
 }

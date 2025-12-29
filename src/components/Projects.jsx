@@ -1,11 +1,8 @@
 import React from 'react';
-import { Grid, Typography, Container } from '@mui/material';
 import ProjectCard from './ProjectCard';
 
-
-
 const projectData = [
-   {
+  {
     name: "EduSparkz",
     description: "An innovative web app that transforms learning into an interactive and personalized experience — powered by state-of-the-art AI APIs. Upload your PDFs, .docx and images auto-generate quizzes, evaluate answers in real-time, and get smarter feedback instantly.Whether you're a student, teacher, or lifelong learner — this tool is your smart study partner.",
     technologies: ["React", "Gemini API", "TailwindCss", 'NodeJs', "ExpressJS", "JWT", "e.t.c"],
@@ -18,7 +15,7 @@ const projectData = [
     description: 'Built a full-stack web attendance application which uses tokens to sign attendance. Features include authentication, dashboards, token generation, marking attendance and CRUD operations.',
     technologies: ['JavaScript', 'React', 'Node.js', 'MongoDB', 'Express.js'],
     link: 'https://github.com/OsamaAbdul/token-based-attendance-system',
-    image: '/images/tokenbased.jpg', 
+    image: '/images/tokenbased.jpg',
     live: 'https://token-based-classroom-attendance.netlify.app'
   },
   {
@@ -26,7 +23,7 @@ const projectData = [
     description: 'Built a personal portfolio while learning the power of React components.',
     technologies: ['React', 'Bootstrap', 'Ajax', 'Material UI'],
     link: 'https://github.com/OsamaAbdul/MY_PORTFOLIO',
-    image: '/images/portfolio.jpg', 
+    image: '/images/portfolio.jpg',
     live: 'https://osamaabdul-portfolio.netlify.app'
   },
   {
@@ -34,7 +31,7 @@ const projectData = [
     description: 'Built a web app that keeps records of book authors and their books.',
     technologies: ['JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Node.js', 'MongoDB', 'ExpressJS'],
     link: 'https://github.com/OsamaAbdul/booklist',
-    image: '/images/booklist.jpg', 
+    image: '/images/booklist.jpg',
   },
   {
     name: "React Jobs Api",
@@ -59,27 +56,25 @@ const projectData = [
     link: "https://github.com/OsamaAbdul/Farmer_Sales_App",
     image: "/images/farmer.png"
   },
- 
 ];
-
-
-
 
 const Projects = () => {
   return (
-    <Container sx={{ py: 4 }}>
-      <Typography variant="h4" align="center" gutterBottom>
-        <h1>PRO<span>JECTS</span></h1>
-        <p></p>
-      </Typography>
-      <Grid container spacing={3}>
+    <section className="container py-24">
+      <div className="flex flex-col items-center mb-12">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 uppercase">
+          PRO<span className="text-[#ff0033]">JECTS</span>
+        </h2>
+        <div className="h-1 w-20 bg-[#ff0033] rounded-full" />
+      </div>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projectData.map((project, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+          <div key={index} className="flex justify-center">
             <ProjectCard project={project} />
-          </Grid>
+          </div>
         ))}
-      </Grid>
-    </Container>
+      </div>
+    </section>
   );
 };
 

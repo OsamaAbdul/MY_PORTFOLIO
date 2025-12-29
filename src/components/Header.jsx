@@ -1,24 +1,26 @@
+import { ArrowDown } from "lucide-react";
+
 function Header() {
   return (
-    <header className="header">
-      <div className="logo">
-        <img src="/images/logo.jpg" alt="Avatar" /> {/* Updated to public path */}
+    <header className="fixed top-0 z-50 w-full bg-black/50 backdrop-blur-sm pt-6 px-8 md:px-16">
+      <div className="flex items-center justify-between">
+        {/* Logo Area */}
+        <div className="border border-white/20 px-3 py-1 text-white tracking-[0.2em] text-sm font-light uppercase">
+          Osama
+        </div>
+
+        {/* Navigation */}
+        <nav>
+          <a
+            href="/osama_resume.pdf"
+            download
+            className="group flex items-center gap-2 text-white/90 hover:text-white text-sm font-light transition-colors"
+          >
+            Download Resume
+            <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-1" />
+          </a>
+        </nav>
       </div>
-      <nav className="nav">
-        <ul>
-          <li>Download Resume</li>
-          <li>
-            <a href="/osama_resume.pdf" download>
-              <button className="btn">
-                <svg className="svg-icon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
-                </svg>
-                <span className="tooltip"></span>
-              </button>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 }

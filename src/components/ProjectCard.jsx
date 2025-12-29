@@ -1,62 +1,60 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Button, Stack } from '@mui/material';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "./ui/card";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import { Github, ExternalLink } from "lucide-react";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card sx={{ maxWidth: 345, margin: 'auto' }}>
-      <CardMedia
-        component="img"
-        height="180"
-        image={project.image}
-        alt={project.name}
-      />
-      <CardContent>
-        <Typography variant="h6" component="div" gutterBottom>
-          {project.name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {project.description}
-        </Typography>
-        <Stack direction="row" spacing={1} mt={2} flexWrap="wrap">
-          {project.technologies.map((tech, index) => (
-            <Typography
-              key={index}
-              variant="caption"
-              sx={{
-                backgroundColor: '#f0f0f0',
-                padding: '2px 8px',
-                borderRadius: '10px'
-              }}
-            >
-              {tech}
-            </Typography>
-          ))}
-        </Stack>
-      </CardContent>
-      <Stack direction="row" spacing={1} sx={{ p: 2 }}>
-        {project.link && (
-          <Button
-            size="small"
-            variant="contained"
-            color="primary"
-            href={project.link}
-            target="_blank"
-          >
-            GitHub
-          </Button>
-        )}
-        {project.live && (
-          <Button
-            size="small"
-            variant="outlined"
-            href={project.live}
-            target="_blank"
-          >
-            Live Demo
-          </Button>
-        )}
-      </Stack>
-    </Card>
+    <motion.div
+      whileHover={{ y: -5 }}
+      transition={{ type: "spring", stiffness: 300 }}
+      className="h-full"
+    >
+      <Card className="flex h-full flex-col overflow-hidden border-muted/50 bg-card hover:bg-muted/5 transition-colors">
+        <div className="relative aspect-video overflow-hidden">
+          <img
+            src={project.image}
+            alt={project.name}
+            className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+        <CardHeader>
+          <CardTitle className="text-xl">{project.name}</CardTitle>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {project.technologies.map((tech, index) => (
+              <Badge key={index} variant="secondary" className="text-xs">
+                {tech}
+              </Badge>
+            ))}
+          </div>
+        </CardHeader>
+        <CardContent className="flex-1">
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            {project.description}
+          </p>
+        </CardContent>
+        <CardFooter className="flex gap-2 pt-0">
+          {project.link && (
+            <Button asChild variant="default" size="sm" className="flex-1 gap-2">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <Github className="h-4 w-4" />
+                Code
+              </a>
+            </Button>
+          )}
+          {project.live && (
+            <Button asChild variant="outline" size="sm" className="flex-1 gap-2">
+              <a href={project.live} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-4 w-4" />
+                Live Demo
+              </a>
+            </Button>
+          )}
+        </CardFooter>
+      </Card>
+    </motion.div>
   );
 };
 
