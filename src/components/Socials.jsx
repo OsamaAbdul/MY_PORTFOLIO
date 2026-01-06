@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { Github, Linkedin, Facebook } from "lucide-react";
+import { Github, Linkedin, Facebook, Twitter } from "lucide-react";
 
 export default function Socials() {
   return (
@@ -30,6 +30,15 @@ export default function Socials() {
         className="text-white transition-all duration-300 hover:scale-125 hover:text-[#1877F2] hover:drop-shadow-[0_0_15px_rgba(24,119,242,0.6)]"
       >
         <Facebook className="h-8 w-8" />
+      </a>
+      <a
+        href="https://www.x.com/osamaabduljnr"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="X"
+        className="text-white transition-all duration-300 hover:scale-125 hover:text-[#1877F2] hover:drop-shadow-[0_0_15px_rgba(24,119,242,0.6)]"
+      >
+        <Twitter className="h-8 w-8" />
       </a>
     </div>
   );

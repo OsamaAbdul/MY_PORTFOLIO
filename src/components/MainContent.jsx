@@ -8,12 +8,46 @@ import Contact from './Contact';
 import Footer from './Footer';
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
+import {
+  Server,
+  Zap,
+  Database,
+  PanelsTopLeft,
+  Layout,
+  Code2,
+  Github,
+  Atom,
+  Code,
+  Bot,
+  GitBranch,
+  Link,
+  ScrollText,
+  Plus
+} from "lucide-react";
 
 function Contents() {
+  const techStack = [
+    { name: "Node.js", icon: <Server className="w-4 h-4 mr-2" /> },
+    { name: "Express.js", icon: <Zap className="w-4 h-4 mr-2" /> },
+    { name: "MongoDB", icon: <Database className="w-4 h-4 mr-2" /> },
+    { name: "Bootstrap", icon: <PanelsTopLeft className="w-4 h-4 mr-2" /> },
+    { name: "HTML/CSS", icon: <Layout className="w-4 h-4 mr-2" /> },
+    { name: "JavaScript", icon: <Code2 className="w-4 h-4 mr-2" /> },
+    { name: "Git/GitHub", icon: <Github className="w-4 h-4 mr-2" /> },
+    { name: "React", icon: <Atom className="w-4 h-4 mr-2" /> },
+    { name: "Supabase", icon: <Database className="w-4 h-4 mr-2" /> },
+    { name: "Typescript", icon: <Code className="w-4 h-4 mr-2" /> },
+    { name: "AI APIs", icon: <Bot className="w-4 h-4 mr-2" /> },
+    { name: "Version Controls(Git & Github)", icon: <GitBranch className="w-4 h-4 mr-2" /> },
+    { name: "Blockchain", icon: <Link className="w-4 h-4 mr-2" /> },
+    { name: "Smart Contracts", icon: <ScrollText className="w-4 h-4 mr-2" /> },
+    { name: "....and More", icon: <Plus className="w-4 h-4 mr-2" /> }
+  ];
+
   return (
     <main className="min-h-screen bg-background text-foreground animate-in fade-in duration-500 font-sans">
       {/* Hero Section */}
-      <section className="container min-h-screen flex items-center justify-center pt-20 md:pt-0">
+      <section id="home" className="container min-h-screen flex items-center justify-center pt-20 md:pt-0">
         <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center w-full max-w-6xl mx-auto px-4">
 
           {/* Left Column: Text Content */}
@@ -57,7 +91,7 @@ function Contents() {
       </section>
 
       {/* About Section */}
-      <section className="bg-muted/10 py-20">
+      <section id="about" className="bg-muted/10 py-20 scroll-mt-20">
         <div className="container max-w-4xl">
           <Card className="border-none bg-transparent shadow-none">
             <CardContent className="space-y-8 text-center">
@@ -74,11 +108,11 @@ function Contents() {
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold">Technologies I have worked with:</h3>
                 <div className="flex flex-wrap justify-center gap-2">
-                  {[
-                    "Node.js", "Express.js", "MongoDB", "Bootstrap",
-                    "HTML/CSS", "JavaScript", "Git/GitHub", "React"
-                  ].map((tech) => (
-                    <Badge key={tech} variant="secondary" className="px-4 py-2 text-sm">{tech}</Badge>
+                  {techStack.map((tech) => (
+                    <Badge key={tech.name} variant="secondary" className="px-4 py-2 text-sm flex items-center">
+                      {tech.icon}
+                      {tech.name}
+                    </Badge>
                   ))}
                 </div>
               </div>

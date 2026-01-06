@@ -3,7 +3,7 @@ import { Badge } from "./ui/badge";
 
 export default function Education({ education }) {
   return (
-    <section className="container py-24">
+    <section id="education" className="container py-24 scroll-mt-20">
       <div className="flex flex-col items-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 uppercase">
           Edu<span className="text-[#ff0033]">cation</span>

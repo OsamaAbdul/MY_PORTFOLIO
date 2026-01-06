@@ -44,7 +44,7 @@ const experienceData = [
 
 export default function Experience() {
     return (
-        <section className="container py-24">
+        <section id="experience" className="container py-24 scroll-mt-20">
             <div className="flex flex-col items-center mb-12">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4 font-serif">
                     Work <span className="text-[#ff0033]">Experience</span>
